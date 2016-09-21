@@ -46,7 +46,7 @@ app.listen(3000, function () {
 });
 ```
 
-## What does confident it do?
+## What else does confident do?
 
 * Map each endpoint to a route controller
 * Validate requests and responses
