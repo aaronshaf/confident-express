@@ -5,7 +5,7 @@ const greet = require('./greet')
 
 app.use(confident({
   definition: './api.yml',
-  controllers: { greet }
+  operations: { greet }
 }))
 
 app.listen(3000, function () {

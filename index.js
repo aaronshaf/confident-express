@@ -6,7 +6,7 @@ module.exports = function (options) {
   const definition = yaml.safeLoad(fs.readFileSync(options.definition, 'utf8'))
   Object.keys(definition.paths).forEach((path) => {
     Object.keys(definition.paths[path]).forEach((method) => {
-      router[method](path, options.controllers[definition.paths[path][method].operationId])
+      router[method](path, options.operations[definition.paths[path][method].operationId])
     })
   })
   return router
