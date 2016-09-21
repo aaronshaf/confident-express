@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/aaronshaf/confident.git"
   },
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "express",
     "openapi",
@@ -22,6 +25,7 @@
   },
   "homepage": "https://github.com/aaronshaf/confident#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "js-yaml": "^3.6.1"
   }
 }

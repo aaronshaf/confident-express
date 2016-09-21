@@ -24,25 +24,26 @@ paths:
 
 ```javascript
 module.exports = function (req, res) {
-  res.json('Hello, world.');
-};
+  res.json('Hello, world.')
+}
 ```
 
 ### index.js
 
 ```javascript
-const express = require('express');
-const app = express();
-const greet = require('./greet');
+const confident = require('confident')
+const express = require('express')
+const app = express()
+const greet = require('./greet')
 
 app.use(confident({
   definition: '/api.yml',
   controllers: { greet }
-}));
+}))
 
 app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
-});
+  console.log('Example app listening on port 3000!')
+})
 ```
 
 ## What else does confident do?
