@@ -1,9 +1,3 @@
-## Features
-
-* Map each endpoint to a route controller
-* Validate requests and responses
-* Publish API documentation (by default at `/_docs`)
-
 ## Get started
 
 ### api.yaml
@@ -51,3 +45,9 @@ app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });
 ```
+
+## What does confident it do?
+
+* Map each endpoint to a route controller
+* Validate requests and responses
+* Publish API documentation (by default at `/docs`)
