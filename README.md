@@ -11,8 +11,6 @@ swagger: '2.0'
 info:
   title: Hello World
   version: 1.0.0
-produces:
-  - application/json
 paths:
   /hello:
     get:
