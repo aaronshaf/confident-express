@@ -2,17 +2,17 @@
 
 * Map each endpoint to a route controller
 * Validate requests and responses
-* Publish API documentation
+* Publish API documentation (by default at `/_docs`)
 
-## Usage
+## Get started
 
 ### api.yaml
 
 ```yaml
 swagger: '2.0'
 info:
-  version: 1.0.0
   title: Hello World
+  version: 1.0.0
 host: www.domain.com
 schemes:
   - http
@@ -40,10 +40,11 @@ module.exports = function (req, res) {
 ```javascript
 const express = require('express');
 const app = express();
+const greet = require('./greet');
 
 app.use(confident({
   definition: '/api.yml',
-  documentationEndpoint: '/docs'
+  controllers: { greet }
 }));
 
 app.listen(3000, function () {
