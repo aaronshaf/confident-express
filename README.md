@@ -1,5 +1,9 @@
 ## Get started
 
+```
+npm install confident --save
+```
+
 ### api.yaml
 
 ```yaml
@@ -7,9 +11,6 @@ swagger: '2.0'
 info:
   title: Hello World
   version: 1.0.0
-host: www.domain.com
-schemes:
-  - http
 produces:
   - application/json
 paths:
