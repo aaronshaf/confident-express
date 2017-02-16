@@ -12,7 +12,7 @@ app.use(confident({
   docsEndpoint: '/docs',
   operations: { greet },
   onResponseValidationError: (req, res, errors, next) => {
-    console.log(errors)
+    res.status(500).json({errors})
     next()
   }
 }))
